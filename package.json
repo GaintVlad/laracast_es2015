@@ -1,0 +1,25 @@
+{
+  "name": "laracast_es6",
+  "version": "1.0.0",
+  "description": "JS ES2015 Lessons by Laracast",
+  "main": "main.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "rollup-plugin-babel": "^4.3.2",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaintVlad/laracast_es2015.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaintVlad/laracast_es2015/issues"
+  },
+  "homepage": "https://github.com/GaintVlad/laracast_es2015#readme"
+}
