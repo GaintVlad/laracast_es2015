@@ -1,31 +1,18 @@
-class TaskCollection {
-    constructor(task = []) {
-        this.task = task;
-    }
-    log() {
-        this.task.forEach((task, index) => console.log(task, index));
-    }
-}
-class Task {}
+const timer  = length => new Promise((resolve, reject)=>{
+    console.log('Init Promise');
 
-new TaskCollection([new Task(),new Task(), new Task()]).log()
+    setTimeout(()=>{
+        console.log('Timeout done');
+        resolve();
+    },length);
+});
 
-//return keyword
-let names = ['Matt', 'Jeffry', 'Bill'];
+timer(200, p0).then(()=> console.log('All done!')).then(()=>{
 
-names =  names.map(name => `${name} +  is coll`);
-console.log(names)
+    (async ()=> {
+        await timer(2000);
+        console.log('Final step!')
+    })();
 
-const obj = {
-    defaultDiscount() {return 0.10},
-    getDiscount(value, discount = this.defaultDiscount()) {
-        return value - (value * discount);
-    },
-    init(discount) {
-        alert(this.getDiscount(100, discount))
-    }
-}
-
-obj.init()
-
+});
 
