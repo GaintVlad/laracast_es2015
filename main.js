@@ -1,11 +1,13 @@
-function *range(start, end) {
-    while (start <= end) {
-        yield start;
-    }
-}
+let users = ['Jeff', 'Vlad', 'Nataly', 'Jeff'];
 
-let iterator = range(1,5)
+let usersSet = new Set(users);
 
-for (let i of iterator) {
-    console.log(i);
-}
+console.log('Set: ', usersSet);
+
+console.log([...usersSet])
+
+usersSet.forEach(u=>console.log(u))
+
+console.log('Length: '+usersSet.size)
+
+console.log(usersSet.__proto__)
