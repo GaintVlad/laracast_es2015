@@ -4,4 +4,8 @@ function *range(start, end) {
     }
 }
 
-iterator =
+let iterator = range(1,5)
+
+for (let i of iterator) {
+    console.log(i);
+}
